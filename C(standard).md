@@ -11,7 +11,7 @@
 ###宏
 	宏声明统一使用英文单词的大写，单词之间用_分割，多行声明语句的宏使用
     do{}while(0)包裹，比如
-    #define macrofun(a, b, c) 			\
+    #define MACROFUN(a, b, c) 			\
 		do {					\
 			if (a == 5)			\
 				do_this(b, c);		\
