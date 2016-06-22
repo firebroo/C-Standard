@@ -1,11 +1,20 @@
 #C standard
+###宏
+	宏声明统一使用英文单词的大写， 单词之间用_分割， 多行声明语句的宏使用do{}while(0)包裹， 比如
+    #define macrofun(a, b, c) 			\
+		do {					\
+			if (a == 5)			\
+				do_this(b, c);		\
+		} while (0)
+
 ###文件
 	头文件统一使用如下代码包裹
     #ifndef XXX_H
     #define XXX_H
     #endif /* XXX_H */
     函数声明，变量声明， 结构体， 联合体，宏包含在头文件中， 头文件中不应该包含任何的定义， 包含系
-    统头文件使用#include <xxx.h>，包含自己定义的头文件使用#include "xxx.h" 。
+    统头文件使用#include <xxx.h>，包含自己定义的头文件使用#include "xxx.h" ，缩进暂用4个字符宽
+    度。
     
 ###函数
 	普通函数名使用英文单词缩写组成，单词之间使用下划线隔开， 内联函数统一在函数函数名后面加_inline，
@@ -84,3 +93,8 @@ function-name (parameter-list)
 ###表达式
 	表达式每个token之间需要用空格分开，避免符号优先级引起的歧义，统一加小括号，比如
     a = ((b + 1) * 2) >> 2
+
+###注释
+只用使用统一C89风格注释/**/, 不允许使用C99风格注释//
+###代码编译标准
+gcc5 -std=gnu11  [GNU C](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
