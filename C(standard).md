@@ -72,8 +72,8 @@ for (initialize; test; step)
 return-type
 function-name (parameter-list)
 {
-	int	i;
-    int	j;
+	int 	i;
+    int 	j
     
     expresss;
 }
@@ -84,9 +84,9 @@ function-name (parameter-list)
 ```c
  typedef struct fish
  {
-       float weight;
-       float length;
-       float probability_of_being_caught;
+	float weight;
+	float length;
+	float probability_of_being_caught;
  } fish_t, *fish_ptr;
 ```
 
