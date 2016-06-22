@@ -31,7 +31,7 @@ return-type function-name (parameter-list);
 return-type
 function-name (parameter-list)
 {
-    	function-body
+    function-body
 }
 ```
 
@@ -62,7 +62,7 @@ function-name (parameters)
 ```c
 for (initialize; test; step)
 {
-		statement
+	statement
 }
 ```
 
