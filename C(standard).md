@@ -58,11 +58,24 @@ function-name (parameters)
         return false;
     }
 
-* for声明
+* for 声明
 ```c
 for (initialize; test; step)
 {
 	statement
+}
+```
+
+* switch 声明
+```c
+switch (a)
+{
+	case 'A':
+    	break;
+    case 'B':
+    	break;
+    default:
+    	break;
 }
 ```
 
