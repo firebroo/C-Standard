@@ -78,14 +78,16 @@ for (initialize; test; step) {
 ```
 
 * switch 声明
+switch 和 case 对齐， switch下面空一行
 ```c
 switch (a) {
-	case 'A':
-    	break;
-    case 'B':
-    	break;
-    default:
-    	break;
+
+case 'A':
+    break;
+case 'B':
+    break;
+default:
+    break;
 }
 ```
 
